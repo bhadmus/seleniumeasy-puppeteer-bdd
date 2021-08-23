@@ -4,7 +4,7 @@ Feature: List Box
 
   Background:
     Given I am on the test page
-    Then I should be able to check for the presence of a popup
+    And I close the popup
     When I click the "list box" option
     Then I should be able to see the "jquery list box" on the list
     When I click the "jquery list box" option

@@ -4,13 +4,14 @@
   "description": "A BDD test written in Typescript with Puppeteer and CucumberJS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "listbox": "./node_modules/.bin/cucumber-js  ./features/ListBox.feature --require-module ts-node/register --require './support/*/*.ts' --format 'json:./result/reports/cucumber_report.json'"
   },
   "author": {
     "name": "Ademola Bhadmus",
     "email": "bhadmusademola.1@gmail.com"
   },
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^7.3.1",
     "@types/cucumber": "^7.0.0",

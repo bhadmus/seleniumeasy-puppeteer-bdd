@@ -4,7 +4,7 @@ Feature: Input Forms
 
   Background:
     Given I am on the test page
-    Then I should be able to check for the presence of a popup
+    Then And I close the popup
     When I click the "input forms" option
     Then I should be able to see the "checkbox demo" on the list
     When I click the "checkbox demo" option
