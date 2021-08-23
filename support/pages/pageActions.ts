@@ -65,6 +65,14 @@ class PageActions {
         }
     }
 
+    public async waitAction(selector: string){
+        try{
+            await this.page.waitForSelector(selector);
+        }catch (e) {
+            throw new Error(`Element ${selector} is not visible`)
+        }
+    }
+
     public async close(){
         try {
             return await this.browser.close();
